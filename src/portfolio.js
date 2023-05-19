@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Full Stack Developer and a DevOps Engineer 🚀 having experience setting up and maintaining CI/CD pipelines to automate the build, test, and deployment processes of web and mobile applications."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kKLdlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1tybRbOpl6xoWImk-zMQgTsUwsh1dIFjJ/view?usp=share_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -86,14 +86,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "kubernetes",
-      fontAwesomeClassname: "fab fa-kubernetes"
-    },
-    {
-      skillName: "ansible",
-      fontAwesomeClassname: "fab fa-ansible"
-    },
-    {
       skillName: "jenkins",
       fontAwesomeClassname: "fab fa-jenkins"
     }
@@ -111,15 +103,11 @@ const educationInfo = {
       logo: require("./assets/images/vu.png"),
       subHeader: "Bachelor of Science in Business and Information Technology",
       duration: "November 2022 - April 2026",
-      desc: "Specialized in Computer Science. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      desc: "Specialized in Computer Science. Took courses of Software Engineering, Web Security, Operating Systems..."
     },
     {
       schoolName: "Punjab Group of Colleges",
-      logo: require("./assets/images/pgc.png"),
+      logo: require("./assets/images/pgc.jpeg"),
       subHeader: "FSc Pre-Engineering",
       duration: "September 2019 - April 2021"
     }
@@ -244,32 +232,18 @@ const achievementSection = {
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Accenture",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Developer Virtual Experience Program.",
+      image: require("./assets/images/accenture.png"),
+      imageAlt: "Accenture",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "View Certificate",
+          url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20Nordics/PxenP4rHNE6Bh4nQz_Accenture%20Nordics_RntBBYiKKs7F7FAWB_1677693450094_completion_certificate.pdf"
         }
       ]
     },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
