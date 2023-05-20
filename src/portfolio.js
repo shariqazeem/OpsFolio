@@ -221,7 +221,7 @@ const achievementSection = {
     {
       title: "IBM DevOps and Software Engineering",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+        "Unleashing the Power of DevOps and Software Engineering for Seamless Software Delivery.",
       image: require("./assets/images/ibm.png"),
       imageAlt: "IBM Certified",
       footerLink: [
