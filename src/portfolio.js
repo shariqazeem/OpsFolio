@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Full Stack Developer and a DevOps Engineer 🚀 having experience setting up and maintaining CI/CD pipelines to automate the build, test, and deployment processes of web and mobile applications."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1tybRbOpl6xoWImk-zMQgTsUwsh1dIFjJ/view?usp=share_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1fPwh-W7uJPeb_URJ3iCep_FrZx-A_NC2/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
