@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        buildTag = "V${env.BUILD_NUMBER}"
+    }
     stages {
         stage('Checkout') {
             steps {
@@ -11,8 +14,6 @@ pipeline {
             steps {
                 script {
                     try {
-                        def buildTag = "V${env.BUILD_NUMBER}"
-
                         sh "docker build -t resume:${buildTag} ."
                         sh "docker tag resume:${buildTag} shariqazeem/resume:${buildTag}"
                     } catch (Exception e) {
