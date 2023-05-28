@@ -43,12 +43,12 @@ pipeline {
                         try {
                             def containerIds = sh(
                                 returnStdout: true,
-                                script: 'ssh -o StrictHostKeyChecking=no ubuntu@3.144.167.38 docker ps -q'
+                                script: 'ssh -o StrictHostKeyChecking=no ubuntu@13.59.37.218 docker ps -q'
                             ).trim()
 
                             if (containerIds) {
-                                sh "docker -H ssh://ubuntu@3.144.167.38 stop ${containerIds}"
-                                sh "docker -H ssh://ubuntu@3.144.167.38 rm ${containerIds}"
+                                sh "docker -H ssh://ubuntu@13.59.37.218 stop ${containerIds}"
+                                sh "docker -H ssh://ubuntu@13.59.37.218 rm ${containerIds}"
                             } else {
                                 echo "No running containers exist. Proceeding with the deployment."
                             }
@@ -64,8 +64,8 @@ pipeline {
         stage('Deploy New Version on Remote Instance') {
             steps {
                 sshagent(credentials: ['ssh-credentials-id']) {
-                    sh "docker -H ssh://ubuntu@3.144.167.38 pull shariqazeem/resume:${buildTag}"
-                    sh "docker -H ssh://ubuntu@3.144.167.38 run -d -p 3000:3000 shariqazeem/resume:${buildTag}"
+                    sh "docker -H ssh://ubuntu@13.59.37.218 pull shariqazeem/resume:${buildTag}"
+                    sh "docker -H ssh://ubuntu@13.59.37.218 run -d -p 3000:3000 shariqazeem/resume:${buildTag}"
                 }
             }
         }
