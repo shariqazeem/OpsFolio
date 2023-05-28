@@ -244,6 +244,19 @@ const achievementSection = {
         }
       ]
     },
+    {
+      title: "Udemy",
+      subtitle:
+        "DevOps Beginners to Advanced | Decoding DevOps with Projects",
+      image: require("./assets/images/udemy-seeklogo.com.png"),
+      imageAlt: "Udemy",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.udemy.com/certificate/UC-ffe8415f-dcf1-428b-b87b-42d9735fb3df/"
+        }
+      ]
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
