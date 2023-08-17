@@ -125,11 +125,11 @@ const techStack = {
     },
     {
       Stack: "Containerization and Orchestration",
-      progressPercentage: "70%"
+      progressPercentage: "75%"
     },
     {
       Stack: "Cloud Platforms (AWS, Azure, GCP)",
-      progressPercentage: "60%"
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -248,7 +248,7 @@ const achievementSection = {
       title: "Udemy",
       subtitle:
         "DevOps Beginners to Advanced | Decoding DevOps with Projects",
-      image: require("./assets/images/udemy-seeklogo.com.png"),
+      image: require("./assets/images/udemy.png"),
       imageAlt: "Udemy",
       footerLink: [
         {
